@@ -14,8 +14,8 @@ const submithandler=(e)=>{
   setError("");
   e.preventDefault();
   //https://api.openweathermap.org
-  //api.openweathermap.org/data/2.5/forecast?q={city name}&appid=847f204de03af6165e62671349c4da35
-   axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=3&appid=847f204de03af6165e62671349c4da35&units=metric`)
+  //api.openweathermap.org/data/2.5/forecast?q={city name}&appid=
+   axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=3&appid=&units=metric`)
    .then((res)=>
    setData(res.data))
 .catch((error)=>
